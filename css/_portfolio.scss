@@ -1,0 +1,118 @@
+
+.portfolio{
+    padding: 0 20px 0 20px;
+    .port{
+        width: 100%;height: 350px;position: relative;margin-bottom: 30px;
+        #image{width: 100%;height: 100%;}
+        img{position: absolute;width: 100px;margin:0 auto;}
+
+        #zimoco{position: absolute;bottom: 20px;left: 50%;transform: translate(-50%, -50%);}
+        #safari{position: absolute;left: 50%;transform: translate(-50%, -50%);bottom: -10px;}
+        #zim{position: absolute;left: 50%;transform: translate(-50%, -50%);bottom: -10px}
+
+        #Portfolio{
+            font-size: 50px;font-family: 'bold';position: absolute;width: 100%;text-align: center;bottom: -80px;
+        }
+    }
+    #safa{margin-bottom: 140px;}
+
+    #myBtn{
+        background-color: #000000;border: none;outline: none;border-radius: 50%;width: 80px;color: white;height: 80px;
+        font-size: 20px;font-family: 'light';margin-left: 35%;;
+    }
+
+}
+
+@media screen and (min-width: 568px){
+
+    .portfolio{
+        display: flex;flex-wrap: wrap;justify-content: space-between;padding: 100px 50px 0 50px;
+        .port{
+            width: 45%;height: 250px;
+            img{position: absolute;width: 100px;}       
+        }
+    
+        #myBtn{
+            margin:0 auto;;
+        }
+    
+    }
+}
+
+
+
+
+@media screen and (min-width:768px){
+
+    
+.portfolio{
+    display: flex;flex-wrap: wrap;justify-content: space-between;padding: 100px 50px 0 50px;
+    .port{
+        width: 45%;height: 350px;
+        img{position: absolute;width: 100px;}       
+    }
+
+    #myBtn{
+        margin:0 auto;;
+    }
+
+}
+}
+
+
+
+@media screen and (min-width:1024px){
+    .portfolio{
+        padding: 0;justify-content: space-around;
+        .port{
+            width: 320px;height: 400px;
+            img{position: absolute;width: 100px;}   
+            
+        }
+        
+    
+        #myBtn{
+            margin:0 auto;width: 150px;height: 150px;font-size: 34px;
+        }
+        #fist{margin-top: 100px;}
+        #thrd{margin-top: 58px;}
+       
+    
+    }
+  
+}
+
+
+
+@media screen and (min-width:1200px){
+   
+    .portfolio{
+        padding: 0 50px 0 50px;justify-content: space-around;
+        .port{
+            width: 350px;height: 450px;
+            img{position: absolute;width: 100px;}   
+            
+        }
+        
+    
+        #myBtn{
+            margin:0 auto;width: 150px;height: 150px;font-size: 34px;
+        }
+        #fist{margin-top: 100px;}
+        #thrd{margin-top: 58px;}
+       
+    
+    }
+    p{
+        width: 100%;text-align: center;
+        #myBtn{
+            &:hover{
+                background-color: white;color: black;border: 2px solid black;
+                transition: .5s ease-in;
+            }
+        }
+    }
+  
+}
+
+

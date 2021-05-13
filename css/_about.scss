@@ -1,0 +1,57 @@
+.about{
+    .container{
+        text-align: center;
+        h2{
+           font-size: 40px;padding: 52px 0 20px 0;
+        }
+        p{
+            width: 100%;margin: 0 auto;text-align: center;font-family: 'light';
+            font-size: 18px;
+        }
+        #more{display: none;}
+        .myBtn{
+            background-color: #000000;border: none;outline: none;border-radius: 50%;width: 80px;color: white;height: 80px;
+            font-size: 20px;font-family: 'light';margin-top: 40px;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+@media screen and (min-width:1024px){
+    .about{
+        padding-bottom: 90px;
+        .container{
+            text-align: center;
+            h2{
+                @include h2;padding-bottom: 52px;
+            }
+            p{
+                width: 616px;margin: 0 auto;text-align: center;font-size: 29px;
+            }
+    
+            .myBtn{
+               width: 150px;height: 150px;
+                font-size: 34px;margin-top: 100px;
+            }
+        }
+    }
+    
+}
+
+@media screen and (min-width:1200px){
+   
+    .about{
+     .myBtn{
+         &:hover{
+             background-color: white;color: black;border: 2px solid black;
+             transition: .5s ease-in;
+         }
+     }
+    }
+}
